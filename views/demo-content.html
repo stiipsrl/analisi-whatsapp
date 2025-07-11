@@ -1,0 +1,733 @@
+<!-- Demo Container -->
+<div class="space-y-8">
+    <!-- Demo Introduction -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <div class="border-l-4 brand-border pl-4 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Demo Modulo WhatsApp Business - Stima srl</h2>
+            <p class="text-gray-600">
+                Questa demo mostra le tre interfacce principali del modulo WhatsApp Business integrato in GiveMeHive: 
+                il client di messaggistica per conversazioni dirette, il configuratore template per campagne promozionali, 
+                e il sistema di automazioni per trigger basati sui dati del gestionale contabilità.
+            </p>
+        </div>
+    </div>
+
+    <!-- 1. Client WhatsApp Business -->
+    <div class="bg-gray-800 rounded-xl p-6 shadow-2xl">
+        <h3 class="text-white text-lg font-semibold mb-4">Client WhatsApp Business - Interfaccia di Messaggistica</h3>
+        
+        <!-- Browser Chrome -->
+        <div class="bg-gray-100 rounded-t-lg flex items-center p-3 space-x-2">
+            <div class="flex space-x-2">
+                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+            </div>
+            <div class="flex-1 bg-white rounded-full px-4 py-1 text-sm text-gray-600">
+                app.givemehive.com/stima-srl/whatsapp-business
+            </div>
+        </div>
+
+        <!-- WhatsApp Interface -->
+        <div class="bg-gray-50 h-[700px] rounded-b-lg overflow-hidden flex">
+            <!-- Sidebar Chat List -->
+            <div class="w-1/3 bg-white border-r border-gray-200 flex flex-col">
+                <!-- Header Search -->
+                <div class="p-4 border-b border-gray-200 bg-gray-50">
+                    <div class="relative">
+                        <span class="material-icons-outlined absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm">search</span>
+                        <input type="text" placeholder="Cerca conversazioni..." class="w-full pl-8 pr-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
+                    </div>
+                </div>
+                
+                <!-- Chat List -->
+                <div class="flex-1 overflow-y-auto">
+                    <!-- Chat 1 - Active -->
+                    <div class="p-3 border-b border-gray-100 bg-green-50 hover:bg-green-100 cursor-pointer">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-medium">
+                                RP
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex justify-between items-start">
+                                    <h4 class="font-medium text-gray-900 text-sm truncate">Ristorante Palazzo</h4>
+                                    <span class="text-xs text-gray-500">10:15</span>
+                                </div>
+                                <p class="text-xs text-gray-600 truncate">Grazie per l'offerta! Quando possiamo...</p>
+                                <div class="flex justify-between items-center mt-2">
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Auto Filtri</span>
+                                    <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chat 2 -->
+                    <div class="p-3 border-b border-gray-100 hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm font-medium">
+                                CB
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex justify-between items-start">
+                                    <h4 class="font-medium text-gray-900 text-sm truncate">Caffè Borghese</h4>
+                                    <span class="text-xs text-gray-500">Ieri</span>
+                                </div>
+                                <p class="text-xs text-gray-600 truncate">Perfetto, procediamo con l'ordine...</p>
+                                <span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs mt-2 inline-block">Vendita</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chat 3 -->
+                    <div class="p-3 border-b border-gray-100 hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm font-medium">
+                                PM
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex justify-between items-start">
+                                    <h4 class="font-medium text-gray-900 text-sm truncate">Pizzeria Milano</h4>
+                                    <span class="text-xs text-gray-500">2 gg fa</span>
+                                </div>
+                                <p class="text-xs text-gray-600 truncate">Interessante, mandatemi più info...</p>
+                                <div class="flex justify-between items-center mt-2">
+                                    <span class="px-2 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs">Follow-up</span>
+                                    <span class="w-2 h-2 bg-red-500 rounded-full"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chat 4 -->
+                    <div class="p-3 border-b border-gray-100 hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white text-sm font-medium">
+                                BL
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex justify-between items-start">
+                                    <h4 class="font-medium text-gray-900 text-sm truncate">Bar Luxury</h4>
+                                    <span class="text-xs text-gray-500">1 sett fa</span>
+                                </div>
+                                <p class="text-xs text-gray-600 truncate">🔥 Offerta speciale filtri...</p>
+                                <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs mt-2 inline-block">Inviato</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Area -->
+            <div class="flex-1 flex flex-col bg-white">
+                <!-- Chat Header -->
+                <div class="p-4 border-b border-gray-200 bg-gray-50">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-medium">
+                                RP
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-gray-900">Ristorante Palazzo</h3>
+                                <div class="flex items-center space-x-2">
+                                    <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                    <span class="text-sm text-gray-600">Online - 2 min fa</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <button class="p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <span class="material-icons-outlined text-sm">call</span>
+                            </button>
+                            <button class="p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <span class="material-icons-outlined text-sm">more_vert</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Messages -->
+                <div class="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50">
+                    <!-- System Message -->
+                    <div class="flex justify-center">
+                        <div class="bg-yellow-100 px-3 py-1 rounded-full text-xs text-yellow-800">
+                            Automazione: Campagna "Filtri 10 anni" - 15 Nov 2024 14:30
+                        </div>
+                    </div>
+
+                    <!-- Sent Message (Auto) -->
+                    <div class="flex justify-end">
+                        <div class="max-w-sm">
+                            <div class="bg-green-500 text-white p-3 rounded-lg rounded-br-none">
+                                <p class="text-sm">🔥 Ciao Sig. Rossi! Il vostro Forno Pro X240 acquistato nel 2014 potrebbe necessitare di filtri nuovi per mantenere le performance ottimali.</p>
+                                <p class="text-sm mt-2">✨ <strong>Offerta speciale 20% sconto</strong> sui filtri originali valida fino al 30 novembre!</p>
+                            </div>
+                            <div class="text-xs text-gray-500 mt-1 text-right">14:30 ✓✓</div>
+                        </div>
+                    </div>
+
+                    <!-- Received Message -->
+                    <div class="flex justify-start">
+                        <div class="max-w-sm">
+                            <div class="bg-white p-3 rounded-lg rounded-bl-none shadow-sm border">
+                                <p class="text-sm text-gray-800">Interessante! Il forno sta perdendo efficienza. Quali filtri consigliate?</p>
+                            </div>
+                            <div class="text-xs text-gray-500 mt-1">15:45</div>
+                        </div>
+                    </div>
+
+                    <!-- Sent Message (Manual) -->
+                    <div class="flex justify-end">
+                        <div class="max-w-sm">
+                            <div class="bg-green-500 text-white p-3 rounded-lg rounded-br-none">
+                                <p class="text-sm">Per il vostro Forno Pro X240 consigliamo:</p>
+                                <p class="text-sm mt-2">• Filtro aria principale<br>• Filtro grasso avanzato<br>• Filtro anti-odore</p>
+                                <p class="text-sm mt-2">Prezzo: €240 → <strong>€192 (20% off)</strong></p>
+                            </div>
+                            <div class="text-xs text-gray-500 mt-1 text-right">15:52 ✓✓</div>
+                        </div>
+                    </div>
+
+                    <!-- Received Final -->
+                    <div class="flex justify-start">
+                        <div class="max-w-sm">
+                            <div class="bg-white p-3 rounded-lg rounded-bl-none shadow-sm border">
+                                <p class="text-sm text-gray-800">Grazie! Quando possiamo fissare un appuntamento? Siamo aperti dalle 12 alle 15.</p>
+                            </div>
+                            <div class="text-xs text-gray-500 mt-1">10:15 - Digitando...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Input Area -->
+                <div class="p-4 border-t border-gray-200 bg-white">
+                    <div class="flex items-center space-x-3">
+                        <button class="p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                            <span class="material-icons-outlined text-sm">attach_file</span>
+                        </button>
+                        <div class="flex-1">
+                            <input type="text" placeholder="Scrivi un messaggio..." class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                        <button class="p-3 bg-green-500 text-white rounded-lg hover:bg-green-600">
+                            <span class="material-icons-outlined text-sm">send</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Quick Replies -->
+                    <div class="flex space-x-2 mt-3">
+                        <button class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-gray-200">📅 Appuntamento</button>
+                        <button class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-gray-200">💰 Preventivo</button>
+                        <button class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-gray-200">📋 Info Prodotto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Template Builder -->
+    <div class="bg-gray-800 rounded-xl p-6 shadow-2xl mt-8">
+        <h3 class="text-white text-lg font-semibold mb-4">Configuratore Template - Editor Messaggi WhatsApp Business</h3>
+        
+        <!-- Browser Chrome -->
+        <div class="bg-gray-100 rounded-t-lg flex items-center p-3 space-x-2">
+            <div class="flex space-x-2">
+                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+            </div>
+            <div class="flex-1 bg-white rounded-full px-4 py-1 text-sm text-gray-600">
+                app.givemehive.com/stima-srl/template-builder
+            </div>
+        </div>
+
+        <!-- Template Builder Interface -->
+        <div class="bg-gray-50 h-[700px] rounded-b-lg overflow-hidden">
+            <!-- Header -->
+            <div class="bg-white border-b px-6 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <h4 class="text-lg font-semibold text-gray-800">Editor Template WhatsApp Business</h4>
+                        <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">In Revisione Meta</span>
+                    </div>
+                    <div class="flex space-x-2">
+                        <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200">
+                            <span class="material-icons-outlined text-sm mr-1">save</span>Salva
+                        </button>
+                        <button class="px-4 py-2 bg-green-500 text-white rounded-lg text-sm font-medium hover:bg-green-600">
+                            <span class="material-icons-outlined text-sm mr-1">send</span>Invia per Approvazione
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Builder Content -->
+            <div class="flex h-[calc(100%-76px)]">
+                <!-- Editor Panel -->
+                <div class="w-2/3 bg-white p-6 overflow-y-auto">
+                    <div class="space-y-6">
+                        <!-- Template Info -->
+                        <div class="border-b pb-4">
+                            <h5 class="font-medium text-gray-800 mb-3">Informazioni Template</h5>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Nome Template</label>
+                                    <input type="text" value="offerta_filtri_10_anni" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Categoria</label>
+                                    <select class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                                        <option>MARKETING</option>
+                                        <option>UTILITY</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Header Section -->
+                        <div class="border-b pb-4">
+                            <h5 class="font-medium text-gray-800 mb-3">Header</h5>
+                            <textarea rows="2" placeholder="Testo header..." class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">🔥 Offerta Speciale Filtri Forno</textarea>
+                        </div>
+
+                        <!-- Body Section -->
+                        <div class="border-b pb-4">
+                            <h5 class="font-medium text-gray-800 mb-3">Corpo del Messaggio</h5>
+                            <textarea rows="6" placeholder="Corpo del messaggio..." class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">Ciao {{nome_cliente}}! 
+
+Il vostro {{modello_forno}} acquistato nel {{anno_acquisto}} potrebbe necessitare di filtri nuovi per mantenere le performance ottimali.
+
+✨ Offerta speciale {{percentuale_sconto}}% di sconto sui filtri originali valida fino al {{data_scadenza}}!
+
+Contattateci per maggiori informazioni.</textarea>
+                            
+                            <!-- Variables -->
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span class="text-sm text-gray-600">Variabili disponibili:</span>
+                                <button class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">{{nome_cliente}}</button>
+                                <button class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">{{modello_forno}}</button>
+                                <button class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">{{anno_acquisto}}</button>
+                                <button class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">{{percentuale_sconto}}</button>
+                            </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="border-b pb-4">
+                            <h5 class="font-medium text-gray-800 mb-3">Footer</h5>
+                            <input type="text" value="Stima srl - Forni e Attrezzature Professionali" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+
+                        <!-- Buttons -->
+                        <div>
+                            <h5 class="font-medium text-gray-800 mb-3">Pulsanti di Azione</h5>
+                            <div class="space-y-3">
+                                <div class="flex items-center space-x-3">
+                                    <select class="p-2 border border-gray-300 rounded-lg">
+                                        <option>Chiamata</option>
+                                        <option>URL</option>
+                                    </select>
+                                    <input type="text" value="Chiama Ora" class="flex-1 p-2 border border-gray-300 rounded-lg">
+                                    <input type="text" value="+39 02 1234567" class="flex-1 p-2 border border-gray-300 rounded-lg">
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <select class="p-2 border border-gray-300 rounded-lg">
+                                        <option>URL</option>
+                                        <option>Chiamata</option>
+                                    </select>
+                                    <input type="text" value="Maggiori Info" class="flex-1 p-2 border border-gray-300 rounded-lg">
+                                    <input type="text" value="https://stima.it/filtri" class="flex-1 p-2 border border-gray-300 rounded-lg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Preview Panel -->
+                <div class="w-1/3 bg-gray-100 p-6">
+                    <div class="space-y-4">
+                        <!-- Phone Preview -->
+                        <div class="bg-white rounded-lg p-4">
+                            <h6 class="font-medium text-gray-800 mb-3 flex items-center">
+                                <span class="material-icons-outlined mr-2 text-sm">phone_iphone</span>Anteprima
+                            </h6>
+                            <div class="bg-gray-200 rounded-lg p-3 max-w-xs">
+                                <!-- Message Preview -->
+                                <div class="bg-green-500 text-white p-3 rounded-lg text-sm">
+                                    <div class="font-medium mb-2">🔥 Offerta Speciale Filtri Forno</div>
+                                    <div class="space-y-2">
+                                        <p>Ciao <strong>Mario Rossi</strong>!</p>
+                                        <p>Il vostro <strong>Forno Pro X240</strong> acquistato nel <strong>2014</strong> potrebbe necessitare di filtri nuovi.</p>
+                                        <p>✨ Offerta speciale <strong>20%</strong> di sconto valida fino al <strong>30 novembre</strong>!</p>
+                                    </div>
+                                    <div class="text-xs opacity-75 mt-3 pt-2 border-t border-green-600">
+                                        Stima srl - Forni e Attrezzature
+                                    </div>
+                                    <div class="flex space-x-2 mt-3">
+                                        <button class="bg-green-600 px-2 py-1 rounded text-xs">📞 Chiama</button>
+                                        <button class="bg-green-600 px-2 py-1 rounded text-xs">ℹ️ Info</button>
+                                    </div>
+                                </div>
+                                <div class="text-xs text-gray-500 mt-1">14:30 ✓✓</div>
+                            </div>
+                        </div>
+
+                        <!-- Validation -->
+                        <div class="bg-white rounded-lg p-4">
+                            <h6 class="font-medium text-gray-800 mb-3">Validazione</h6>
+                            <div class="space-y-2">
+                                <div class="flex items-center space-x-2">
+                                    <span class="material-icons-outlined text-green-500 text-sm">check_circle</span>
+                                    <span class="text-sm text-gray-700">Nome valido</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span class="material-icons-outlined text-green-500 text-sm">check_circle</span>
+                                    <span class="text-sm text-gray-700">Variabili OK</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span class="material-icons-outlined text-yellow-500 text-sm">warning</span>
+                                    <span class="text-sm text-gray-700">Lunghezza: 890/1024</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Data Source -->
+                        <div class="bg-white rounded-lg p-4">
+                            <h6 class="font-medium text-gray-800 mb-3">Fonte Dati</h6>
+                            <div class="text-sm text-gray-600">
+                                <p><strong>Gestionale:</strong></p>
+                                <p>• nome_cliente → Anagrafica</p>
+                                <p>• modello_forno → Fatture</p>
+                                <p>• anno_acquisto → Data vendita</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Dashboard Automazioni -->
+    <div class="bg-gray-800 rounded-xl p-6 shadow-2xl mt-8">
+        <h3 class="text-white text-lg font-semibold mb-4">Dashboard Automazioni e Campagne</h3>
+        
+        <!-- Browser Chrome -->
+        <div class="bg-gray-100 rounded-t-lg flex items-center p-3 space-x-2">
+            <div class="flex space-x-2">
+                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+            </div>
+            <div class="flex-1 bg-white rounded-full px-4 py-1 text-sm text-gray-600">
+                app.givemehive.com/stima-srl/automazioni
+            </div>
+        </div>
+
+        <!-- Automations Interface -->
+        <div class="bg-gray-50 h-[700px] rounded-b-lg overflow-hidden">
+            <!-- Header -->
+            <div class="bg-white border-b px-6 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <h4 class="text-lg font-semibold text-gray-800">Sistema Automazioni WhatsApp</h4>
+                        <span class="px-3 py-1 bg-brand text-gray-900 rounded-full text-sm font-medium">5 Automazioni Attive</span>
+                    </div>
+                    <div class="flex space-x-2">
+                        <button class="px-4 py-2 bg-brand text-gray-900 rounded-lg text-sm font-medium hover:opacity-90">
+                            <span class="material-icons-outlined text-sm mr-1">add</span>Nuova Automazione
+                        </button>
+                        <button class="px-4 py-2 bg-blue-500 text-white rounded-lg text-sm font-medium hover:bg-blue-600">
+                            <span class="material-icons-outlined text-sm mr-1">assessment</span>Report
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="p-6 overflow-y-auto h-[calc(100%-76px)]">
+                <!-- Stats Overview -->
+                <div class="grid grid-cols-4 gap-4 mb-6">
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-sm text-gray-500">Costi Mensili</span>
+                            <span class="material-icons-outlined text-orange-500 text-sm">euro</span>
+                        </div>
+                        <div class="text-2xl font-bold text-gray-900">€89</div>
+                        <div class="text-xs text-gray-500">€156 budget rimasto</div>
+                    </div>
+                </div>
+
+                <!-- Automazioni List -->
+                <div class="bg-white rounded-lg shadow">
+                    <div class="p-4 border-b">
+                        <h5 class="font-medium text-gray-800">Automazioni Attive</h5>
+                    </div>
+                    <div class="divide-y divide-gray-200">
+                        <!-- Automazione 1 -->
+                        <div class="p-4 hover:bg-gray-50">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                                    <div>
+                                        <h6 class="font-medium text-gray-800">Filtri Forno - 10 Anni</h6>
+                                        <p class="text-sm text-gray-600">Trigger: 10 anni dall'acquisto forno → Offerta filtri 20% sconto</p>
+                                        <div class="flex items-center space-x-4 mt-2">
+                                            <span class="text-xs text-gray-500">Clienti monitorati: 1,247</span>
+                                            <span class="text-xs text-gray-500">Prossimo trigger: 3 giorni</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded">Attiva</span>
+                                    <button class="text-blue-600 hover:text-blue-800">
+                                        <span class="material-icons-outlined text-sm">edit</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mt-3 bg-gray-50 rounded-lg p-3">
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-gray-600">Performance ultimo mese:</span>
+                                    <span class="font-medium">15 messaggi inviati, 9 risposte (60%)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Automazione 2 -->
+                        <div class="p-4 hover:bg-gray-50">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-3 h-3 bg-blue-500 rounded-full"></div>
+                                    <div>
+                                        <h6 class="font-medium text-gray-800">Manutenzione Programmata</h6>
+                                        <p class="text-sm text-gray-600">Trigger: 2 anni dall'acquisto → Promemoria manutenzione ordinaria</p>
+                                        <div class="flex items-center space-x-4 mt-2">
+                                            <span class="text-xs text-gray-500">Clienti monitorati: 892</span>
+                                            <span class="text-xs text-gray-500">Prossimo trigger: Domani</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Attiva</span>
+                                    <button class="text-blue-600 hover:text-blue-800">
+                                        <span class="material-icons-outlined text-sm">edit</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Automazione 3 -->
+                        <div class="p-4 hover:bg-gray-50">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-3 h-3 bg-purple-500 rounded-full"></div>
+                                    <div>
+                                        <h6 class="font-medium text-gray-800">Follow-up Post Vendita</h6>
+                                        <p class="text-sm text-gray-600">Trigger: 30 giorni post-acquisto → Soddisfazione e cross-selling</p>
+                                        <div class="flex items-center space-x-4 mt-2">
+                                            <span class="text-xs text-gray-500">Vendite monitorate: 156</span>
+                                            <span class="text-xs text-gray-500">Conversion rate: 23%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">Attiva</span>
+                                    <button class="text-blue-600 hover:text-blue-800">
+                                        <span class="material-icons-outlined text-sm">edit</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Automazione 4 -->
+                        <div class="p-4 hover:bg-gray-50">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                                    <div>
+                                        <h6 class="font-medium text-gray-800">Nuovi Prodotti</h6>
+                                        <p class="text-sm text-gray-600">Trigger: Lancio prodotto → Segmentazione per tipologia cliente</p>
+                                        <div class="flex items-center space-x-4 mt-2">
+                                            <span class="text-xs text-gray-500">Segmenti: Bar, Ristoranti, Pizzerie</span>
+                                            <span class="text-xs text-gray-500">Ultimo invio: 5 gg fa</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">Programmata</span>
+                                    <button class="text-blue-600 hover:text-blue-800">
+                                        <span class="material-icons-outlined text-sm">edit</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Automazione 5 -->
+                        <div class="p-4 hover:bg-gray-50">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                                    <div>
+                                        <h6 class="font-medium text-gray-800">Recupero Carrello Abbandonato</h6>
+                                        <p class="text-sm text-gray-600">Trigger: Preventivo non finalizzato → Reminder dopo 3 giorni</p>
+                                        <div class="flex items-center space-x-4 mt-2">
+                                            <span class="text-xs text-gray-500">Preventivi monitorati: 67</span>
+                                            <span class="text-xs text-gray-500">Recovery rate: 18%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span class="px-2 py-1 bg-red-100 text-red-800 text-xs rounded">Attiva</span>
+                                    <button class="text-blue-600 hover:text-blue-800">
+                                        <span class="material-icons-outlined text-sm">edit</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Performance Chart Area -->
+                <div class="grid grid-cols-2 gap-6 mt-6">
+                    <div class="bg-white rounded-lg shadow p-4">
+                        <h6 class="font-medium text-gray-800 mb-4">Performance Campagne (Ultimo Mese)</h6>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center p-3 bg-green-50 rounded-lg">
+                                <span class="text-sm text-green-800">Filtri 10 anni</span>
+                                <div class="text-right">
+                                    <div class="text-sm font-medium text-green-900">78% risposta</div>
+                                    <div class="text-xs text-green-700">15 messaggi</div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                                <span class="text-sm text-blue-800">Manutenzione</span>
+                                <div class="text-right">
+                                    <div class="text-sm font-medium text-blue-900">65% risposta</div>
+                                    <div class="text-xs text-blue-700">23 messaggi</div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-purple-50 rounded-lg">
+                                <span class="text-sm text-purple-800">Follow-up</span>
+                                <div class="text-right">
+                                    <div class="text-sm font-medium text-purple-900">45% conversion</div>
+                                    <div class="text-xs text-purple-700">8 vendite</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow p-4">
+                        <h6 class="font-medium text-gray-800 mb-4">Controllo Budget Mensile</h6>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-gray-600">Budget Totale</span>
+                                <span class="text-lg font-bold text-gray-900">€245</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-green-500 h-3 rounded-full" style="width: 36%"></div>
+                            </div>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>Utilizzato: €89</span>
+                                <span>Rimanente: €156</span>
+                            </div>
+                            
+                            <div class="space-y-2 pt-4 border-t">
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-gray-600">Messaggi inviati:</span>
+                                    <span class="font-medium">342 (€0.08 cad.)</span>
+                                </div>
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-gray-600">Conversazioni:</span>
+                                    <span class="font-medium">28 (€1.20 cad.)</span>
+                                </div>
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-gray-600">Template approval:</span>
+                                    <span class="font-medium">5 (€15.00 cad.)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature Summary -->
+    <div class="grid grid-cols-3 gap-6 mt-8">
+        <div class="bg-white rounded-lg shadow p-6">
+            <div class="flex items-center space-x-3 mb-4">
+                <span class="material-icons-outlined text-[#FCD415] text-2xl">chat</span>
+                <h4 class="font-medium text-gray-900">Client WhatsApp Completo</h4>
+            </div>
+            <p class="text-sm text-gray-600">
+                Interfaccia completa tipo WhatsApp Web con gestione conversazioni, allegati, quick replies e 
+                integrazione diretta con automazioni per un'esperienza utente familiare e professionale.
+            </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-6">
+            <div class="flex items-center space-x-3 mb-4">
+                <span class="material-icons-outlined text-[#FCD415] text-2xl">design_services</span>
+                <h4 class="font-medium text-gray-900">Template Builder Avanzato</h4>
+            </div>
+            <p class="text-sm text-gray-600">
+                Editor intuitivo per creare template WhatsApp Business con variabili dinamiche dal gestionale, 
+                preview real-time e processo di approvazione Meta integrato.
+            </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-6">
+            <div class="flex items-center space-x-3 mb-4">
+                <span class="material-icons-outlined text-[#FCD415] text-2xl">auto_awesome</span>
+                <h4 class="font-medium text-gray-900">Automazioni Intelligenti</h4>
+            </div>
+            <p class="text-sm text-gray-600">
+                Sistema di trigger automatici basato sui dati del gestionale per campagne promozionali 
+                personalizzate, follow-up post-vendita e monitoraggio performance con controllo budget.
+            </p>
+        </div>
+    </div>
+
+    <!-- Implementation Notes -->
+    <div class="bg-white rounded-xl shadow-md p-6 mt-8">
+        <h3 class="text-lg font-semibold text-gray-800 mb-6">Note Tecniche MVP</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-4">
+                <div class="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                    <h4 class="font-medium text-blue-800 mb-2">Integrazione Gestionale</h4>
+                    <ul class="space-y-1 text-sm text-blue-700">
+                        <li>• Connector API custom per lettura dati fatture</li>
+                        <li>• Mappatura automatica prodotti-clienti-date</li>
+                        <li>• Sincronizzazione sicura in tempo reale</li>
+                    </ul>
+                </div>
+                
+                <div class="p-4 bg-green-50 rounded-lg border border-green-200">
+                    <h4 class="font-medium text-green-800 mb-2">WhatsApp Business API</h4>
+                    <ul class="space-y-1 text-sm text-green-700">
+                        <li>• Integrazione Business Service Provider</li>
+                        <li>• Webhook real-time per messaggi ricevuti</li>
+                        <li>• Template approval workflow Meta</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="p-4 bg-purple-50 rounded-lg border border-purple-200">
+                    <h4 class="font-medium text-purple-800 mb-2">Sistema Automazioni</h4>
+                    <ul class="space-y-1 text-sm text-purple-700">
+                        <li>• Engine trigger basato su date e eventi</li>
+                        <li>• Scheduler per campagne programmate</li>
+                        <li>• Tracking performance e analytics</li>
+                    </ul>
+                </div>
+                
+                <div class="p-4 bg-orange-50 rounded-lg border border-orange-200">
+                    <h4 class="font-medium text-orange-800 mb-2">Controllo Costi</h4>
+                    <ul class="space-y-1 text-sm text-orange-700">
+                        <li>• Monitoraggio budget real-time</li>
+                        <li>• Alert automatici soglie spesa</li>
+                        <li>• Breakdown dettagliato costi per tipo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
